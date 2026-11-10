@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Jason Spiele</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Spiele</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #101827, #243b55);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 55px 20px 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px 20px;
+        }
+
+        .game {
+            background: #1e293b;
+            border: 2px solid #475569;
+            border-radius: 15px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 8px 25px #0005;
+        }
+
+        .game h2 {
+            font-size: 25px;
+        }
+
+        .game p {
+            color: #cbd5e1;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 25px;
+            background: #16a34a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #22c55e;
+        }
+
+        footer {
+            padding: 30px;
+            color: #94a3b8;
+        }
+    </style>
 </head>
+
 <body>
-<h1>🎮 Jason Spiele</h1>
-<h2>Meine Spiele</h2>
-<p><a href="spiel1.html.html">Spiel 1 starten</a></p>
-<p><a href="spiel2.html.html">Spiel 2 starten</a></p>
+
+    <header>
+        <h1>🎮 Jason Spiele</h1>
+        <p class="subtitle">Willkommen auf meiner Spiele-Website!</p>
+    </header>
+
+    <main class="games">
+
+        <div class="game">
+            <h2>🧟 LAST ROAD</h2>
+            <p>Überlebe gegen die Zombies!</p>
+            <a class="button" href="spiel1.html">Jetzt spielen</a>
+        </div>
+
+        <div class="game">
+            <h2>🎯 Spiel 2</h2>
+            <p>Entdecke mein zweites Spiel!</p>
+            <a class="button" href="spiel2.html">Jetzt spielen</a>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Jason Spiele
+    </footer>
+
 </body>
 </html>
